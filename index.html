@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pos">
+        <div class="itemspos">
+            
+                <label class="namepos">Person's Name</label>
+                <input type="text" name="first" placeholder="First" id="first" required>
+                <input type="text" name="last" placeholder="Last" id="last" required>
+        
+                <label>Contact Number</label>
+                <input type="text" name="contact" class="contactpos" id="contact" required>
+                <button class="savePos" onclick="enterInTable()">Save</button>
+        </div>
+    </div>
+
+    <div class="bottomPos">
+        <input type="text" onkeyup="search()" id="myInput" placeholder=" Search...." name="search" class="searchPos">   
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>SN.</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tr class="tableRow">
+                <td class="srno">1</td>
+                <td>Rohan Singh</td>
+                <td>7897802647</td>
+                <td class="del" onclick="delFunc()"> x </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
